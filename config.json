@@ -1,0 +1,12 @@
+{
+  "activity": {
+    "name": "activity-framework"
+  },
+  "application": {
+    "id": "YOUR_APPLICATION_ID",
+    "secret": "YOUR_APPLICATION_SECRET"
+  },
+  "backend": {
+    "secret": "UNIQUE_JWT_SECRET"
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div class="activity">
+      <!-- This is the activity container. If you decide to use this example as a base, put all your client HTML inside of here. -->
+      <div class="activityContainer" id="activityScreen">
+        <div class="frameworkWelcomeContainer">
+          <h1 class="frameworkWelcomeText" id="welcomeHeader">Hello,</h1>
+          <h3 class="frameworkWelcomeText">from activity-framework</h3>
+          <button id="activityClose">Close Activity</button>
+        </div>
+      </div>
+      <!-- This is the splash screen. The provided example activity will hide the splash screen after authorising with the discord client. -->
+      <div class="splash" id="splashScreen" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column;">
+        <p class="load" id="splashMessage" style="margin-top: auto; color: black; align-self: center; font-family: 'Metropolis Regular'; margin-bottom: 0.5%;"></p>
+      </div>
+    </div>
+    <% for (var js in htmlWebpackPlugin.files.js) { %><script src="<%= htmlWebpackPlugin.files.js[js] %>"></script><% } %>
+  </body>
+</html>
