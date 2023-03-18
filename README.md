@@ -8,3 +8,5 @@ Framework for building discord embedded activities.
 4. Generate localhost certificates via mkcert (Check `activity-server/cert/mkcert.exe`)
 5. Run the activity server (`npm start`)
 6. Your built activity will be served on `https://localhost:3000`
+
+If you have any further questions, feel free to ask them in my [discord server](https://discord.gg/DDg5Z7kZvs).
