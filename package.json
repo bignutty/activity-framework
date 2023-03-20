@@ -6,11 +6,14 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "build-dev": "webpack --config webpack.dev.js",
-    "start": "node activity-server/src/index.js"
+    "start": "node activity-server/src/index.js",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"yellow.italic,blue.italic\" -p \"[{name}]\" \"npm start\" \"npm run build-dev -- --watch\"",
+    "postinstall": "concurrently -n \"SERVER,FRAMEWORK\" -c \"yellow.bold,red.bold\" -p \"install [{name}]\" \"cd activity-server && npm install\" \"cd activity-framework && npm install\""
   },
   "author": "big nutty",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
