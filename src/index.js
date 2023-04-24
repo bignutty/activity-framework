@@ -1,5 +1,7 @@
 import './style.css';
 
+import { application } from '../config.json';
+
 import ActivityInstance from '../activity-framework';
 
 if (process.env.NODE_ENV !== 'production') {
@@ -7,7 +9,7 @@ if (process.env.NODE_ENV !== 'production') {
 };
 
 (async () => {
-  const activity = new ActivityInstance("909186215721467974", "https://localhost:3000");
+  const activity = new ActivityInstance(application.id, "https://localhost:3000");
   await activity.run();
   console.log('Activity is ready and authorised!')
 
