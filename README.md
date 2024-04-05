@@ -11,4 +11,4 @@ Framework for building discord embedded activities.
 5. Run the activity server (`npm start`)
 6. Your built activity will be served on `https://localhost:3000`
 
-If you have any further questions, feel free to ask them in my [discord server](https://discord.gg/DDg5Z7kZvs).
+If you need to reach me, you can find me in this [discord server](https://discord.gg/EPk28hzGS2).
